@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
 
+  s.dependency 'Futuristics', '0.1.0-alpha'
+
   s.source_files = 'Source/*.swift'
 
 end
