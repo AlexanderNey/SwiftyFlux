@@ -77,7 +77,7 @@
 		AC7808811B6F69B400D048C6 = {
 			isa = PBXGroup;
 			children = (
-				AC78088D1B6F69B400D048C6 /* SwityFlux */,
+				AC78088D1B6F69B400D048C6 /* Source */,
 				AC78089A1B6F69B400D048C6 /* SwityFluxTests */,
 				AC78088C1B6F69B400D048C6 /* Products */,
 				214527742740670F8C97A13A /* Pods */,
@@ -94,7 +94,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC78088D1B6F69B400D048C6 /* SwityFlux */ = {
+		AC78088D1B6F69B400D048C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				AC7808AD1B6F6A2800D048C6 /* ActionCreator.swift */,
@@ -105,7 +105,6 @@
 				AC7808901B6F69B400D048C6 /* SwityFlux.h */,
 				AC78088E1B6F69B400D048C6 /* Supporting Files */,
 			);
-			name = SwityFlux;
 			path = Source;
 			sourceTree = "<group>";
 		};
@@ -410,7 +409,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwityFlux/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +427,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwityFlux/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
