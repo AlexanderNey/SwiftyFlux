@@ -1,6 +1,6 @@
 //
-//  SwityFluxTests.swift
-//  SwityFluxTests
+//  FluxActionDispatcherTests.swift
+//  FluxActionDispatcherTests
 //
 //  Created by Alexander Ney on 03/08/2015.
 //  Copyright (c) 2015 Alexander Ney. All rights reserved.
@@ -8,16 +8,19 @@
 
 import UIKit
 import XCTest
+import SwityFlux
 
-class SwityFluxTests: XCTestCase {
+
+class FluxActionDispatcherTests: XCTestCase {
+
+    var dispatcher: FluxActionDispatcher! = nil
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.dispatcher = FluxActionDispatcher()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
