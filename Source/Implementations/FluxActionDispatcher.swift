@@ -14,7 +14,7 @@ public class FluxActionDispatcher : ActionDispatcher {
     
     public enum State { case Idle, Dispatching }
     
-    let dispatchQueue = dispatch_queue_create("com.flux-dispatcher.queue", nil)
+    let dispatchQueue = dispatch_queue_create("com.flux-dispatcher.queue", DISPATCH_QUEUE_SERIAL)
     public private (set) var state = State.Idle
     
     
