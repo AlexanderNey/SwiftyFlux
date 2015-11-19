@@ -24,20 +24,24 @@ class FluxActionDispatcherTests: XCTestCase {
         super.tearDown()
     }
     
-    func new_dispatcher() {
+    func test_new_dispatcher() {
         let dispatcher = FluxActionDispatcher()
         XCTAssertEqual(dispatcher.stores.count, 0, "should not have any stores")
         XCTAssertEqual(dispatcher.state, FluxActionDispatcher.State.Idle, "should be idle")
         
-        let dispatchExpectation = self.expectationWithDescription("")
+        let dispatchExpectation = self.expectationWithDescription("should disgest action")
 
-        dispatcher.dispatchAction(SimpleAction()).onSuccess {
+        dispatcher.dispatchAction(SimpleAction()).onSuccess(onMainQueue()) {
             dispatchExpectation.fulfill()
         }.onFailure { _ in
-            XCTFail("dispatch failed")
+            XCTFail("dispatch action failed")
         }
         
         self.waitForExpectationsWithTimeout(5, handler: nil)
+    }
+    
+    func test_dispatcher_registers_store() {
+        
     }
     
     func testPerformanceExample() {
