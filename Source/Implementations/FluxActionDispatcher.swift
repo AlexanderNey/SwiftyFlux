@@ -12,10 +12,10 @@ import Futuristics
 
 public class FluxActionDispatcher : ActionDispatcher {
     
-    enum State { case Idle, Dispatching }
+    public enum State { case Idle, Dispatching }
     
     let dispatchQueue = dispatch_queue_create("com.flux-dispatcher.queue", nil)
-    var state = State.Idle
+    public private (set) var state = State.Idle
     
     
     public private (set) var stores = [Store]()

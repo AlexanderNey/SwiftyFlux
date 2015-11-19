@@ -22,9 +22,10 @@ class FluxActionDispatcherTests: XCTestCase {
         super.tearDown()
     }
     
-    func new_dispatcher_should_not_have_any_stores() {
+    func new_dispatcher() {
         let dispatcher = FluxActionDispatcher()
         XCTAssertEqual(dispatcher.stores.count, 0, "should not have any stores")
+        XCTAssertEqual(dispatcher.state, FluxActionDispatcher.State.Idle, "should be idle")
     }
     
     func testPerformanceExample() {
