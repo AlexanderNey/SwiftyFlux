@@ -53,7 +53,8 @@ public class FluxActionDispatcher : ActionDispatcher {
         }
     }
     
-    public func dispatchAction(action: Action) {
+    public func dispatchAction(action: Action) -> Future<Void> {
+        let promise = Promise<Void>()
         self.closureOnOperationQueue {
             self.beginDispatchCycle()
             self.stores.forEach { store in
@@ -61,7 +62,10 @@ public class FluxActionDispatcher : ActionDispatcher {
                 self.storeDidDigest(store)
             }
             self.endDispatchCycle()
+            promise.fulfill()
         }()
+        
+        return promise.future
     }
     
     // MARK: Dispatch Cycle

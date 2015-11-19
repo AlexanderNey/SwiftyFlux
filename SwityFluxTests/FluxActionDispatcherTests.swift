@@ -9,10 +9,12 @@
 import UIKit
 import XCTest
 import SwityFlux
+import Futuristics
 
 
 class FluxActionDispatcherTests: XCTestCase {
 
+    struct SimpleAction: Action { }
     
     override func setUp() {
         super.setUp()
@@ -26,6 +28,16 @@ class FluxActionDispatcherTests: XCTestCase {
         let dispatcher = FluxActionDispatcher()
         XCTAssertEqual(dispatcher.stores.count, 0, "should not have any stores")
         XCTAssertEqual(dispatcher.state, FluxActionDispatcher.State.Idle, "should be idle")
+        
+        let dispatchExpectation = self.expectationWithDescription("")
+
+        dispatcher.dispatchAction(SimpleAction()).onSuccess {
+            dispatchExpectation.fulfill()
+        }.onFailure { _ in
+            XCTFail("dispatch failed")
+        }
+        
+        self.waitForExpectationsWithTimeout(5, handler: nil)
     }
     
     func testPerformanceExample() {
