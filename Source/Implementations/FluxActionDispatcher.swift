@@ -18,7 +18,7 @@ public class FluxActionDispatcher : ActionDispatcher {
     var state = State.Idle
     
     
-    var stores = [Store]()
+    public private (set) var stores = [Store]()
     private var currentDispatchCycle = [(store: Store, actionDigestPromise:Promise<Void>)]()
     
     public init() { }

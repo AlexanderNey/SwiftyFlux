@@ -13,20 +13,18 @@ import SwityFlux
 
 class FluxActionDispatcherTests: XCTestCase {
 
-    var dispatcher: FluxActionDispatcher! = nil
     
     override func setUp() {
         super.setUp()
-        self.dispatcher = FluxActionDispatcher()
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func new_dispatcher_should_not_have_any_stores() {
+        let dispatcher = FluxActionDispatcher()
+        XCTAssertEqual(dispatcher.stores.count, 0, "should not have any stores")
     }
     
     func testPerformanceExample() {
