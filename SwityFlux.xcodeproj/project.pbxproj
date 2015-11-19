@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC4B1AFA1BFBA68B00F0A2AB /* ActionSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */; };
+		AC77A5961BFCB9BE00D58B08 /* FluxActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */; };
+		AC77A5A31BFE175300D58B08 /* FluxAutoRegisteringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */; };
 		AC7808911B6F69B400D048C6 /* SwityFlux.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7808901B6F69B400D048C6 /* SwityFlux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC7808971B6F69B400D048C6 /* SwityFlux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC78088B1B6F69B400D048C6 /* SwityFlux.framework */; };
 		AC78089E1B6F69B400D048C6 /* SwityFluxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78089D1B6F69B400D048C6 /* SwityFluxTests.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSubscriber.swift; sourceTree = "<group>"; };
+		AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxActionDispatcher.swift; sourceTree = "<group>"; };
+		AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxAutoRegisteringStore.swift; sourceTree = "<group>"; };
 		AC78088B1B6F69B400D048C6 /* SwityFlux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwityFlux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC78088F1B6F69B400D048C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7808901B6F69B400D048C6 /* SwityFlux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwityFlux.h; sourceTree = "<group>"; };
@@ -98,10 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				AC7808AD1B6F6A2800D048C6 /* ActionCreator.swift */,
-				AC7808AB1B6F6A1D00D048C6 /* Store.swift */,
 				AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */,
-				AC7808A71B6F6A1400D048C6 /* ActionDispatcher.swift */,
+				AC7808AB1B6F6A1D00D048C6 /* Store.swift */,
 				AC7808A81B6F6A1400D048C6 /* Action.swift */,
+				AC7808A71B6F6A1400D048C6 /* ActionDispatcher.swift */,
+				AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */,
+				AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */,
 				AC7808901B6F69B400D048C6 /* SwityFlux.h */,
 				AC78088E1B6F69B400D048C6 /* Supporting Files */,
 			);
@@ -284,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC77A5961BFCB9BE00D58B08 /* FluxActionDispatcher.swift in Sources */,
 				AC7808AE1B6F6A2800D048C6 /* ActionCreator.swift in Sources */,
+				AC77A5A31BFE175300D58B08 /* FluxAutoRegisteringStore.swift in Sources */,
 				AC4B1AFA1BFBA68B00F0A2AB /* ActionSubscriber.swift in Sources */,
 				AC7808AC1B6F6A1D00D048C6 /* Store.swift in Sources */,
 				AC7808A91B6F6A1400D048C6 /* ActionDispatcher.swift in Sources */,
