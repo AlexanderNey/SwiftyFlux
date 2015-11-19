@@ -21,6 +21,7 @@ public class FluxActionDispatcher : ActionDispatcher {
     var stores = [Store]()
     private var currentDispatchCycle = [(store: Store, actionDigestPromise:Promise<Void>)]()
     
+    public init() { }
     
     // MARK: Operation Queue
     
