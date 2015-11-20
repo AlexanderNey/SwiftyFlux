@@ -29,19 +29,35 @@ class FluxActionDispatcherTests: XCTestCase {
         XCTAssertEqual(dispatcher.stores.count, 0, "should not have any stores")
         XCTAssertEqual(dispatcher.state, FluxActionDispatcher.State.Idle, "should be idle")
         
-        let dispatchExpectation = self.expectationWithDescription("should disgest action")
+        let dispatchExpectation = self.expectationWithDescription("should digest action")
 
-        dispatcher.dispatchAction(SimpleAction()).onSuccess(onMainQueue()) {
+        dispatcher.dispatchAction(SimpleAction()).onSuccess {
             dispatchExpectation.fulfill()
         }.onFailure { _ in
             XCTFail("dispatch action failed")
         }
         
-        self.waitForExpectationsWithTimeout(5, handler: nil)
+        self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
     func test_dispatcher_registers_store() {
+        let dispatcher = FluxActionDispatcher()
+        let store = FluxAutoRegisteringStore(dispatcher: dispatcher)
         
+        XCTAssertEqual(dispatcher.stores.count, 1, "should have one store")
+        XCTAssertEqual(dispatcher.state, FluxActionDispatcher.State.Idle, "should be idle")
+        
+        let dispatchExpectation = self.expectationWithDescription("should digest action")
+        
+        dispatcher.dispatchAction(SimpleAction()).onSuccess {
+            dispatchExpectation.fulfill()
+            }.onFailure { _ in
+                XCTFail("dispatch action failed")
+        }
+        
+        
+        
+        self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
     func testPerformanceExample() {
