@@ -9,15 +9,15 @@
 import Foundation
 
 
-class FluxAutoRegisteringStore : Store {
+public class FluxAutoRegisteringStore : Store {
     
     let dispatcher: ActionDispatcher
     private var observer = [StoreObserver]()
-    var latestUpdate: NSDate?
+    public var latestUpdate: NSDate?
     
     // MARK: Store
     
-    required init(dispatcher: ActionDispatcher) {
+    required public init(dispatcher: ActionDispatcher) {
         self.dispatcher = dispatcher
         self.dispatcher.registerStore(self)
     }
@@ -26,28 +26,28 @@ class FluxAutoRegisteringStore : Store {
         self.dispatcher.unregisterStore(self)
     }
     
-    func addObserver(observer: StoreObserver) {
+    public   func addObserver(observer: StoreObserver) {
         if !self.observer.contains({ $0 === observer }) {
             self.observer.append(observer)
             observer.storeDidChange(self)
         }
     }
     
-    func removeObserver(observer: StoreObserver) {
+    public func removeObserver(observer: StoreObserver) {
         self.observer = self.observer.filter { $0 !== observer }
     }
     
     
     // MARK: ActionSubscriber
     
-    func digestAction(action: Action) -> Bool {
+    public func digestAction(action: Action) -> Bool {
         return false
     }
     
     
     // MARK: Notify Observer
     
-    func storeChangeNotifyObserver() {
+    public func storeChangeNotifyObserver() {
         self.latestUpdate = NSDate()
         dispatch_async(dispatch_get_main_queue()) {
             for observer in self.observer {
