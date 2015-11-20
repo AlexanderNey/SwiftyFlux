@@ -23,26 +23,20 @@ public class FluxActionDispatcher : ActionDispatcher {
     
     public init() { }
     
-    // MARK: Operation Queue
-    
-    public func closureOnOperationQueue<T, U>(closure: T throws -> U) -> (T -> Future<U>) {
-        return onQueue(self.dispatchQueue, after:  nil)(closure)
-    }
-
     // MARK: ActionDispatcher
     
     public func registerStore(store: Store) {
-        self.closureOnOperationQueue {
+        dispatch_sync(self.dispatchQueue) {
             if !self.stores.contains({ $0 === store }) {
                 self.stores.append(store)
             }
-        }()
+        }
     }
     
     public func unregisterStore(store: Store) {
-         self.closureOnOperationQueue { _ in
+        dispatch_sync(self.dispatchQueue) {
             self.stores = self.stores.filter { return $0 !== store }
-        }()
+        }
     }
     
     public func afterStoreDigests(store: Store, completion: Void -> Void) {
@@ -55,7 +49,7 @@ public class FluxActionDispatcher : ActionDispatcher {
     
     public func dispatchAction(action: Action) -> Future<Void> {
         let promise = Promise<Void>()
-        self.closureOnOperationQueue {
+        dispatch_async(self.dispatchQueue) {
             self.beginDispatchCycle()
             self.stores.forEach { store in
                 store.digestAction(action)
@@ -63,7 +57,7 @@ public class FluxActionDispatcher : ActionDispatcher {
             }
             self.endDispatchCycle()
             promise.fulfill()
-        }()
+        }
         
         return promise.future
     }
