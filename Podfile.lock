@@ -1,10 +1,10 @@
 PODS:
-  - Futuristics (0.1.0-alpha)
+  - Futuristics (0.2.0-alpha)
 
 DEPENDENCIES:
-  - Futuristics (= 0.1.0-alpha)
+  - Futuristics (= 0.2.0-alpha)
 
 SPEC CHECKSUMS:
-  Futuristics: 394d9fb7d9e4deff89b46148a16cb373ff229c15
+  Futuristics: df16023fd7a2d740fbc4a9eb07db967d68d1e064
 
 COCOAPODS: 0.39.0
