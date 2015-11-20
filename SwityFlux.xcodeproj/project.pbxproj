@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0E9BB31BFF82BB0070A3D2 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */; };
+		AC0E9BB51BFF8EB40070A3D2 /* TestActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */; };
+		AC0E9BB71BFF8EC70070A3D2 /* TestStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */; };
 		AC4B1AFA1BFBA68B00F0A2AB /* ActionSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */; };
 		AC77A5A71BFE1A6600D58B08 /* FluxActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */; };
 		AC77A5A81BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestActions.swift; sourceTree = "<group>"; };
+		AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStores.swift; sourceTree = "<group>"; };
 		AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSubscriber.swift; sourceTree = "<group>"; };
 		AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxActionDispatcher.swift; sourceTree = "<group>"; };
 		AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxAutoRegisteringStore.swift; sourceTree = "<group>"; };
@@ -133,7 +139,10 @@
 		AC78089A1B6F69B400D048C6 /* SwityFluxTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */,
+				AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */,
 				AC78089D1B6F69B400D048C6 /* FluxActionDispatcherTests.swift */,
+				AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */,
 				AC78089B1B6F69B400D048C6 /* Supporting Files */,
 			);
 			path = SwityFluxTests;
@@ -312,7 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0E9BB51BFF8EB40070A3D2 /* TestActions.swift in Sources */,
 				AC78089E1B6F69B400D048C6 /* FluxActionDispatcherTests.swift in Sources */,
+				AC0E9BB31BFF82BB0070A3D2 /* StoreTests.swift in Sources */,
+				AC0E9BB71BFF8EC70070A3D2 /* TestStores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
