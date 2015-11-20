@@ -26,7 +26,7 @@ public class FluxAutoRegisteringStore : Store {
         self.dispatcher.unregisterStore(self)
     }
     
-    public   func addObserver(observer: StoreObserver) {
+    public func addObserver(observer: StoreObserver) {
         if !self.observer.contains({ $0 === observer }) {
             self.observer.append(observer)
             observer.storeDidChange(self)
@@ -40,9 +40,7 @@ public class FluxAutoRegisteringStore : Store {
     
     // MARK: ActionSubscriber
     
-    public func digestAction(action: Action) -> Bool {
-        return false
-    }
+    public func digestAction(action: Action) { }
     
     
     // MARK: Notify Observer
