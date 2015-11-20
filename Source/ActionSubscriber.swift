@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol ActionSubscriber {
-    func digestAction(action: Action) -> Bool
+    func digestAction(action: Action)
 }
