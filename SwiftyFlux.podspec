@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftyFlux'
-  s.version = '0.1.0-alpha'
+  s.version = '0.2.0-alpha'
   s.license = { :type => "MIT" }
   s.summary = 'Flux for Swift 2.0'
   s.homepage = 'https://github.com/AlexanderNey/SwiftyFlux'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
 
-  s.dependency 'Futuristics', '0.1.0-alpha'
+  s.dependency 'Futuristics', '0.2.0-alpha'
 
   s.source_files = 'Source/*.swift'
 
