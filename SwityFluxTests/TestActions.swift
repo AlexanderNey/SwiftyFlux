@@ -11,3 +11,7 @@ import SwityFlux
 
 
 struct SimpleAction: Action { }
+
+struct PayloadAction: Action {
+    var payload: String?
+}
