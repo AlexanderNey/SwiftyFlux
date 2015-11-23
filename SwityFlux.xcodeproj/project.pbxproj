@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0E9BB31BFF82BB0070A3D2 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */; };
+		AC0E9BB51BFF8EB40070A3D2 /* TestActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */; };
+		AC0E9BB71BFF8EC70070A3D2 /* TestStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */; };
 		AC4B1AFA1BFBA68B00F0A2AB /* ActionSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */; };
-		AC77A5961BFCB9BE00D58B08 /* FluxActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */; };
-		AC77A5A31BFE175300D58B08 /* FluxAutoRegisteringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */; };
+		AC77A5A71BFE1A6600D58B08 /* FluxActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */; };
+		AC77A5A81BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */; };
 		AC7808911B6F69B400D048C6 /* SwityFlux.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7808901B6F69B400D048C6 /* SwityFlux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC7808971B6F69B400D048C6 /* SwityFlux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC78088B1B6F69B400D048C6 /* SwityFlux.framework */; };
-		AC78089E1B6F69B400D048C6 /* SwityFluxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78089D1B6F69B400D048C6 /* SwityFluxTests.swift */; };
+		AC78089E1B6F69B400D048C6 /* FluxActionDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78089D1B6F69B400D048C6 /* FluxActionDispatcherTests.swift */; };
 		AC7808A91B6F6A1400D048C6 /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7808A71B6F6A1400D048C6 /* ActionDispatcher.swift */; };
 		AC7808AA1B6F6A1400D048C6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7808A81B6F6A1400D048C6 /* Action.swift */; };
 		AC7808AC1B6F6A1D00D048C6 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7808AB1B6F6A1D00D048C6 /* Store.swift */; };
@@ -31,15 +34,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestActions.swift; sourceTree = "<group>"; };
+		AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStores.swift; sourceTree = "<group>"; };
 		AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSubscriber.swift; sourceTree = "<group>"; };
-		AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxActionDispatcher.swift; sourceTree = "<group>"; };
-		AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxAutoRegisteringStore.swift; sourceTree = "<group>"; };
+		AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxActionDispatcher.swift; sourceTree = "<group>"; };
+		AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluxAutoRegisteringStore.swift; sourceTree = "<group>"; };
 		AC78088B1B6F69B400D048C6 /* SwityFlux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwityFlux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC78088F1B6F69B400D048C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7808901B6F69B400D048C6 /* SwityFlux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwityFlux.h; sourceTree = "<group>"; };
 		AC7808961B6F69B400D048C6 /* SwityFluxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwityFluxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC78089C1B6F69B400D048C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC78089D1B6F69B400D048C6 /* SwityFluxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwityFluxTests.swift; sourceTree = "<group>"; };
+		AC78089D1B6F69B400D048C6 /* FluxActionDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxActionDispatcherTests.swift; sourceTree = "<group>"; };
 		AC7808A71B6F6A1400D048C6 /* ActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
 		AC7808A81B6F6A1400D048C6 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		AC7808AB1B6F6A1D00D048C6 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -78,6 +84,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC77A5A41BFE1A6600D58B08 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */,
+				AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
 		AC7808811B6F69B400D048C6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +116,12 @@
 		AC78088D1B6F69B400D048C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AC7808A81B6F6A1400D048C6 /* Action.swift */,
 				AC7808AD1B6F6A2800D048C6 /* ActionCreator.swift */,
 				AC4B1AF91BFBA68B00F0A2AB /* ActionSubscriber.swift */,
-				AC7808AB1B6F6A1D00D048C6 /* Store.swift */,
-				AC7808A81B6F6A1400D048C6 /* Action.swift */,
 				AC7808A71B6F6A1400D048C6 /* ActionDispatcher.swift */,
-				AC77A5951BFCB9BE00D58B08 /* FluxActionDispatcher.swift */,
-				AC77A5A21BFE175300D58B08 /* FluxAutoRegisteringStore.swift */,
+				AC7808AB1B6F6A1D00D048C6 /* Store.swift */,
+				AC77A5A41BFE1A6600D58B08 /* Implementations */,
 				AC7808901B6F69B400D048C6 /* SwityFlux.h */,
 				AC78088E1B6F69B400D048C6 /* Supporting Files */,
 			);
@@ -125,7 +139,10 @@
 		AC78089A1B6F69B400D048C6 /* SwityFluxTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC78089D1B6F69B400D048C6 /* SwityFluxTests.swift */,
+				AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */,
+				AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */,
+				AC78089D1B6F69B400D048C6 /* FluxActionDispatcherTests.swift */,
+				AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */,
 				AC78089B1B6F69B400D048C6 /* Supporting Files */,
 			);
 			path = SwityFluxTests;
@@ -290,13 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC77A5961BFCB9BE00D58B08 /* FluxActionDispatcher.swift in Sources */,
 				AC7808AE1B6F6A2800D048C6 /* ActionCreator.swift in Sources */,
-				AC77A5A31BFE175300D58B08 /* FluxAutoRegisteringStore.swift in Sources */,
 				AC4B1AFA1BFBA68B00F0A2AB /* ActionSubscriber.swift in Sources */,
+				AC77A5A81BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift in Sources */,
 				AC7808AC1B6F6A1D00D048C6 /* Store.swift in Sources */,
 				AC7808A91B6F6A1400D048C6 /* ActionDispatcher.swift in Sources */,
 				AC7808AA1B6F6A1400D048C6 /* Action.swift in Sources */,
+				AC77A5A71BFE1A6600D58B08 /* FluxActionDispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC78089E1B6F69B400D048C6 /* SwityFluxTests.swift in Sources */,
+				AC0E9BB51BFF8EB40070A3D2 /* TestActions.swift in Sources */,
+				AC78089E1B6F69B400D048C6 /* FluxActionDispatcherTests.swift in Sources */,
+				AC0E9BB31BFF82BB0070A3D2 /* StoreTests.swift in Sources */,
+				AC0E9BB71BFF8EC70070A3D2 /* TestStores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

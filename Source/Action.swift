@@ -10,7 +10,6 @@ import Foundation
 
 public protocol Action { }
 
-
 public protocol ActionTransportsError : Action {
     var error: ErrorType { get }
 }

@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Futuristics
 
 public protocol ActionDispatcher {
     func registerStore(store: Store)
     func unregisterStore(store: Store)
     func afterStoreDigests(store: Store, completion: Void -> Void)
-    func dispatchAction(action: Action)
+    func dispatchAction(action: Action) -> Future<Void>
 }
 
 
