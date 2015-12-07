@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'Futuristics', '0.2.1-alpha'
 
-  s.source_files = 'Source/*.swift'
+  s.source_files = 'Source/**/*.swift'
 end
