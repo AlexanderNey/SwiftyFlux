@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.watchos.deployment_target = '2.0'
 
-  s.dependency 'Futuristics', '0.2.1-alpha'
+  s.dependency 'Futuristics', '0.2.1'
 
   s.source_files = 'Source/*.swift'
 end
