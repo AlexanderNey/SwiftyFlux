@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwityFlux.xcscheme_^#shared#^_</key>
+		<key>SwiftyFlux watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SwityFlux iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AC7081DE1C17587E003F1999</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AC78088A1B6F69B400D048C6</key>
 		<dict>
 			<key>primary</key>

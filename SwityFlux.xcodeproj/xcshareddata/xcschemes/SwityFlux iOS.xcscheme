@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC78088A1B6F69B400D048C6"
-               BuildableName = "SwityFlux.framework"
-               BlueprintName = "SwityFlux"
+               BuildableName = "SwityFlux iOS.framework"
+               BlueprintName = "SwityFlux iOS"
                ReferencedContainer = "container:SwityFlux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,8 +58,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC78088A1B6F69B400D048C6"
-            BuildableName = "SwityFlux.framework"
-            BlueprintName = "SwityFlux"
+            BuildableName = "SwityFlux iOS.framework"
+            BlueprintName = "SwityFlux iOS"
             ReferencedContainer = "container:SwityFlux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC78088A1B6F69B400D048C6"
-            BuildableName = "SwityFlux.framework"
-            BlueprintName = "SwityFlux"
+            BuildableName = "SwityFlux iOS.framework"
+            BlueprintName = "SwityFlux iOS"
             ReferencedContainer = "container:SwityFlux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,8 +98,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC78088A1B6F69B400D048C6"
-            BuildableName = "SwityFlux.framework"
-            BlueprintName = "SwityFlux"
+            BuildableName = "SwityFlux iOS.framework"
+            BlueprintName = "SwityFlux iOS"
             ReferencedContainer = "container:SwityFlux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
