@@ -9,7 +9,7 @@
 import Foundation
 import Futuristics
 
-public protocol ActionDispatcher {
+public protocol ActionDispatcher: class {
     func registerStore(store: Store)
     func unregisterStore(store: Store)
     func afterStoreDigests(store: Store, completion: Void -> Void)
