@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0970241C188996005E082D /* FluxActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A51BFE1A6600D58B08 /* FluxActionDispatcher.swift */; };
+		AC0970251C188996005E082D /* FluxAutoRegisteringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77A5A61BFE1A6600D58B08 /* FluxAutoRegisteringStore.swift */; };
 		AC0E9BB31BFF82BB0070A3D2 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB21BFF82BB0070A3D2 /* StoreTests.swift */; };
 		AC0E9BB51BFF8EB40070A3D2 /* TestActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB41BFF8EB40070A3D2 /* TestActions.swift */; };
 		AC0E9BB71BFF8EC70070A3D2 /* TestStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E9BB61BFF8EC70070A3D2 /* TestStores.swift */; };
@@ -368,9 +370,11 @@
 			files = (
 				AC7081EB1C175945003F1999 /* Store.swift in Sources */,
 				AC7081E81C175945003F1999 /* ActionCreator.swift in Sources */,
+				AC0970251C188996005E082D /* FluxAutoRegisteringStore.swift in Sources */,
 				AC7081E91C175945003F1999 /* ActionSubscriber.swift in Sources */,
 				AC7081EA1C175945003F1999 /* ActionDispatcher.swift in Sources */,
 				AC7081E71C175945003F1999 /* Action.swift in Sources */,
+				AC0970241C188996005E082D /* FluxActionDispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +652,7 @@
 				AC7081E51C17587E003F1999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC7808851B6F69B400D048C6 /* Build configuration list for PBXProject "SwityFlux" */ = {
 			isa = XCConfigurationList;

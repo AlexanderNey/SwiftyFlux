@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC7081DE1C17587E003F1999"
-               BuildableName = "SwiftyFlux watchOS.framework"
+               BuildableName = "SwiftyFlux.framework"
                BlueprintName = "SwiftyFlux watchOS"
                ReferencedContainer = "container:SwityFlux.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC7081DE1C17587E003F1999"
-            BuildableName = "SwiftyFlux watchOS.framework"
+            BuildableName = "SwiftyFlux.framework"
             BlueprintName = "SwiftyFlux watchOS"
             ReferencedContainer = "container:SwityFlux.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC7081DE1C17587E003F1999"
-            BuildableName = "SwiftyFlux watchOS.framework"
+            BuildableName = "SwiftyFlux.framework"
             BlueprintName = "SwiftyFlux watchOS"
             ReferencedContainer = "container:SwityFlux.xcodeproj">
          </BuildableReference>
